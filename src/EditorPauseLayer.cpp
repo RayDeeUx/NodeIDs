@@ -257,7 +257,7 @@ $register_ids(EditorPauseLayer) {
 
         guidelinesMenu->setID("guidelines-menu");
         guidelinesMenu->setContentSize({ winSize.width / 2, 50.f });
-        guidelinesMenu->setLayout(RowLayout::create());
+        guidelinesMenu->setLayout(RowLayout::create()->setAutoScale(true));
 
         auto topMenu = CCMenu::create();
         topMenu->setContentSize({ winSize.width / 2, 50.f });
@@ -308,3 +308,4 @@ struct EditorPauseLayerIDs : Modify<EditorPauseLayerIDs, EditorPauseLayer> {
         return true;
     }
 };
+
