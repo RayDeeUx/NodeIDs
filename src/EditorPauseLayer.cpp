@@ -263,7 +263,7 @@ $register_ids(EditorPauseLayer) {
         topMenu->setContentSize({ winSize.width / 2, 50.f });
         topMenu->setPosition(winSize.width / 2, winSize.height - 30.f);
         topMenu->setID("top-menu");
-        topMenu->setLayout(RowLayout::create());
+        topMenu->setLayout(RowLayout::create()-setAutoScale(true));
         this->addChild(topMenu);
     }
 
@@ -308,3 +308,4 @@ struct EditorPauseLayerIDs : Modify<EditorPauseLayerIDs, EditorPauseLayer> {
         return true;
     }
 };
+
